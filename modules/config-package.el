@@ -1,7 +1,7 @@
 ;; -*- lexical-binding: t -*-
 (require 'cl-lib)
 (eval-when-compile
-  (require 'config-setq))
+  (load-module! 'config-setq))
 
 ;; =============================================
 ;; Setup straight.el

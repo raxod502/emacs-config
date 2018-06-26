@@ -1,6 +1,6 @@
 ;; -*- lexical-binding: t -*-
 (require 'cl-lib)
-(require 'config-tramp)
+(load-module! 'config-tramp)
 
 (use-package semantic
   :ensure nil

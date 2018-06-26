@@ -1,11 +1,11 @@
 ;; -*- lexical-binding: t -*-
 (require 'cl-lib)
 
-(require 'config-avy-easymotion)
-(require 'config-undo)
+(load-module! 'config-avy-easymotion)
+(load-module! 'config-undo)
 
-(require 'config-smartparens)
-(require 'config-rainbow-delimiters)
+(load-module! 'config-smartparens)
+(load-module! 'config-rainbow-delimiters)
 
 (setq mouse-wheel-scroll-amount '(3 ((shift) . 1))
       mouse-wheel-progressive-speed nil

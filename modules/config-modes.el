@@ -1,14 +1,14 @@
 ;; -*- lexical-binding: t -*-
 (require 'cl-lib)
-(require 'config-package)
-(require 'config-tex)
-(require 'config-c)
-(require 'config-python)
+(load-module! 'config-package)
+(load-module! 'config-tex)
+(load-module! 'config-c)
+(load-module! 'config-python)
 
 (eval-when-compile
   (with-demoted-errors "Load error: %s"
     (require 'evil)
-    (require 'config-setq)))
+    (load-module! 'config-setq)))
 
 ;; =============================================================================
 ;; Emacs Lisp ==================================================================

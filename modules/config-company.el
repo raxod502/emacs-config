@@ -17,7 +17,7 @@
 
   (eval-and-compile
     (with-demoted-errors "Load error: %s"
-      (require 'config-setq))
+      (load-module! 'config-setq))
     (cl-macrolet
         ((company-define-specific-modes
           (mode backend)

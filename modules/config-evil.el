@@ -216,8 +216,8 @@
   (global-set-key (kbd "<remap> <just-one-space>") #'evil-cycle-spacing)
   (global-set-key (kbd "<remap> <delete-horizontal-space>") #'evil-cycle-spacing)
 
-  (require 'config-evil-modules)
-  (require 'config-evil-textobjects))
+  (load-module! 'config-evil-modules)
+  (load-module! 'config-evil-textobjects))
 
 (defmacro el-patch-evil-define-command (&rest args)
   "Patch an evil command. The ARGS are the same as for `evil-define-command'."
